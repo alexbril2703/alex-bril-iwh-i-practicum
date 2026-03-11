@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= title
+  body
+    h1 Pets Overview
+
+    a(href="/update-cobj") Add to this table
+
+    table(border="1")
+      thead
+        tr
+          th Name
+          th Type
+          th Age
+      tbody
+        each pet in data
+          tr
+            td= pet.properties.name
+            td= pet.properties.type
+            td= pet.properties.age
